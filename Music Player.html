@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+</head>
+
+<body">
+    <div class="container">
+        <div class="musicDetails">
+            <img alt="" id="songAlbum">
+            <audio id="songSource"></audio>
+            <p id="songName"></p>
+            <span id="artistName"></span>
+            <span id="current" style="display: inline;margin-left: 10px;">0:0</span>
+            <input type="range" value="0" id="musicTracker">
+            <span id="currentPlay" style="display: inline;margin-left: 10px;">0:0</span>
+        </div>
+        <div class="volumeControls">
+            <i class="fa-solid fa-volume-high" id="songVoulme"></i>
+            <input type="range" value="0" id="volumeChange">
+        </div>
+        <div class="musicPlayer">
+            <i class="fa-solid fa-backward" id="previousSong"></i>
+            <i class="fa-solid fa-play" id="playMusic"></i>
+            <i class="fa-solid fa-pause" id="pauseMusic"></i>
+            <i class="fa-solid fa-stop" id="stopMusic"></i>
+            <i class="fa-solid fa-forward" id="nextSong"></i>
+        </div>
+    </div>
+    <script src="idex.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #614b7a, #cf7c3d);
+}
+#musicTracker {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  width: 374px;
+}
+input[type="range"] {
+  cursor: pointer;
+  background: linear-gradient(to right, #e06907, #0f0a05a6);
+  border: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 90%;
+  background: linear-gradient(to right, #ffffff, #531f0a52);
+  cursor: pointer;
+}
+#current,
+#currentPlay {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000000;
+  font-weight: bolder;
+}
+#volumeChange {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  width: 170px;
+  margin-right: 265px;
+}
+span {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: default;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 2px;
+  cursor: text;
+}
+i {
+  cursor: pointer;
+}
+i:hover {
+  animation: iconAnimation 1s ease forwards;
+}
+span:hover {
+  animation: textAnimation 2s ease forwards;
+}
+/* .container:hover {
+  animation: containerAnimation 0.9s ease forwards;
+} */
+p:hover {
+  animation: textAnimation 2s ease forwards;
+}
+img:hover {
+  animation: albumAnimation 1.5s ease-out forwards;
+}
+img {
+  transform: scale(0.85);
+}
+
+.container {
+  background: linear-gradient(to right, #35191d80, #ad5b18a8);
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+  height: 85vh;
+  border-radius: 7%;
+}
+p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  cursor: text;
+}
+img {
+  border-radius: 17%;
+  margin: 17px;
+}
+.volumeControls,
+.musicPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.volumeControls {
+  gap: 12px;
+}
+.musicDetails {
+  margin-bottom: 70px;
+}
+.musicPlayer {
+  gap: 55px;
+}
+
+@keyframes albumAnimation {
+  to {
+    transform: scale(0.9);
+  }
+  from {
+    transform: scale(0.85);
+  }
+}
+@keyframes containerAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes iconAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.7);
+  }
+}
+@keyframes textAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
